@@ -1,0 +1,1 @@
+27 bits are not enough for 8-digit accuracy from the inequality 10 8

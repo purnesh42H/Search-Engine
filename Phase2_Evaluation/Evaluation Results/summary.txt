@@ -1,0 +1,35 @@
+TfIdf_with_PseudoRel_QueryResults
+MAP = 0.168
+MRR = 0.272
+Mean P@5 = 0.123
+Mean P@20 = 0.106
+TfIdf_QueryResults
+MAP = 0.289
+MRR = 0.537
+Mean P@5 = 0.227
+Mean P@20 = 0.139
+CosineSim_QueryResults
+MAP = 0.387
+MRR = 0.643
+Mean P@5 = 0.323
+Mean P@20 = 0.203
+BM25_QueryResults
+MAP = 0.313
+MRR = 0.561
+Mean P@5 = 0.304
+Mean P@20 = 0.161
+TfIdf_with_Stopping_QueryResults
+MAP = 0.331
+MRR = 0.572
+Mean P@5 = 0.265
+Mean P@20 = 0.174
+BM25_Stopping_QueryResults
+MAP = 0.395
+MRR = 0.654
+Mean P@5 = 0.373
+Mean P@20 = 0.220
+Lucene_QueryResults
+MAP = 0.412
+MRR = 0.680
+Mean P@5 = 0.365
+Mean P@20 = 0.200

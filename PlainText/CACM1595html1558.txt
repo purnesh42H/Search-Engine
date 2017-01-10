@@ -1,0 +1,1 @@
+on the computer enumeration of finite topologies the problem of enumerating the number of topologies which can be formed from a finite point set is considered both theoretically and computationally certain fundamental results are established leading to an algorithm for enumerating finite topologies and computed results are given for n
