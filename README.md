@@ -30,21 +30,21 @@ collection
 
 The files are build on Python version 2.7x
 
-In windows:
+Using IDE like IDLE
   - Open the python editor IDLE from the menu, and open xxxx.py(eg: Task-1.py for Task-1), then press F5 to run it.
 
-In Linux:
-1. On terminal, type chmod u+rx xxxx.py(eg: Task-1.py for Task-1) to make file executable and press Enter
-2. Type python xxxx.py(eg: Task-1.py for Task-1) and press Enter
-3. Provide the corpus file in directory "Corpus\\..."
+Using terminal
+  - On terminal, type chmod u+rx xxxx.py(eg: Task-1.py for Task-1) to make file executable and press Enter
+  - Type python xxxx.py(eg: Task-1.py for Task-1) and press Enter
+  - Provide the corpus file in directory "Corpus\\..."
 
 Setup and compile java files:
-Step 1: Open command prompt
-Step 2: Include lucene-core-4.7.2.jar, lucene-analyzers-common-4.7.2.jar, lucene-queryparser-4.7.2.jar
-Step 3: Compile HW4.java by writing " javac HW4.java" on command prompt.
-Step 4: Execute the HW4.java file by following command
-javac -cp ".;lucene-core-4.7.2.jar;lucene-analyzers-common-4.7.2.jar;lucene-queryparser-4.7.2.jar" HW4.java
-java -cp ".;lucene-core-4.7.2.jar;lucene-analyzers-common-4.7.2.jar;lucene-queryparser-4.7.2.jar" HW4
+  - Open command prompt
+  - Include lucene-core-4.7.2.jar, lucene-analyzers-common-4.7.2.jar, lucene-queryparser-4.7.2.jar
+  - Compile HW4.java by writing " javac HW4.java" on command prompt.
+  - Execute the HW4.java file by following command
+  - javac -cp ".;lucene-core-4.7.2.jar;lucene-analyzers-common-4.7.2.jar;lucene-queryparser-4.7.2.jar" HW4.java
+  - java -cp ".;lucene-core-4.7.2.jar;lucene-analyzers-common-4.7.2.jar;lucene-queryparser-4.7.2.jar" HW4
 
 ## Indexer And Text Processor
 Text Processor code files
