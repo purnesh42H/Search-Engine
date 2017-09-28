@@ -8,6 +8,44 @@ This project was intended to design and develop a sophisticated search engine fo
 - [Evaluate the enhanced models over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall and tabulate the results](#final-evaluation)
 - [Choose the best model(BM25 with stopping) and display the query results with summary highlighting the query words from each relavant document](#snippet-generation)
 
+# Source Codes(Python files):
+- Task1_HtmlTextExtracter.py - To convert the raw html to plain text
+- Task1_HtmlTextExtracter.py - To index the CACM dataset
+- Task1_TfIdf.py - TfIdf baseline model
+- Task1_CosineSimVectorSpace.py - Vector Space Cosine Sim baseline model
+- Task1_BM25.py - BM25 baseline model
+- Task2_TfIdf_Pseudo_Relevance.py - TfIf with pseudo relevance
+- Task3_TextExtracter_StemText.py - To extract documents from stemmed text 
+collection
+- Task3_InvertedIndexer_StemText.py - To index the CACM stemmed dataset
+- Task3_TfIdf_StemText.py - TfIdf with stemming
+- Task3_TfIdf_Stopping.py - TfIdf with Stopping
+- SnippetGeneration_ExtraCredits.py - To generate snippet of top 10 documents for 64 queries
+- ~\Project\Phase2_Evaluation.py - Evaluates all the search engine by calculating effectiveness parameters
+
+# Source Codes(Java files):
+- ~\Project\3rdRun_Lucene_Baseline\src\com\lucene\HW4.java - Lucene baseline model
+
+# Setup and compile python files:
+
+***********************The files are build on Python version 2.7x****************************
+
+In windows:
+Open the python editor IDLE from the menu, and open xxxx.py(eg: Task-1.py for Task-1), then press F5 to run it.
+
+In Linux:
+1. On terminal, type chmod u+rx xxxx.py(eg: Task-1.py for Task-1) to make file executable and press Enter
+2. Type python xxxx.py(eg: Task-1.py for Task-1) and press Enter
+3. Provide the corpus file in directory "Corpus\\..."
+
+Setup and compile java files:
+Step 1: Open command prompt
+Step 2: Include lucene-core-4.7.2.jar, lucene-analyzers-common-4.7.2.jar, lucene-queryparser-4.7.2.jar
+Step 3: Compile HW4.java by writing " javac HW4.java" on command prompt.
+Step 4: Execute the HW4.java file by following command
+javac -cp ".;lucene-core-4.7.2.jar;lucene-analyzers-common-4.7.2.jar;lucene-queryparser-4.7.2.jar" HW4.java
+java -cp ".;lucene-core-4.7.2.jar;lucene-analyzers-common-4.7.2.jar;lucene-queryparser-4.7.2.jar" HW4
+
 ## Indexer And Text Processor
 Text Processor code files
 - For raw CACM corpus(/corpus) - Task1_HtmlTextExtracter.py
@@ -83,7 +121,7 @@ BM25
 
 ## Tf Idf Enhancements
 - Tf-Idf with psuedo relavance
-  - Code: Task2_TfIdf_Pseudo_Relevance
+  - Code: Task2_TfIdf_Pseudo_Relevance.py
   - Result: /5thRun_TfIdf_PsuedoRelevance/TfIdf_with_PseudoRel_QueryResults.txt
   - Evaluation: /Phase2_Evaluation/Evaluation Results/evaluation_TfIdf_with_PseudoRel_QueryResults.txt
     - MAP = 0.168
@@ -104,81 +142,64 @@ BM25
   - Code: Task3_TfIdf_StemText.py
   - Result: /Task3_RunWithStemming/TfIdf_Stem_QueryResults.txt
   
+## BM25 With Stopping
+  - Code: Implementation2_BM25_Stopping.py
+  - Result: /5thRun_TfIdf_PsuedoRelevance/TfIdf_with_PseudoRel_QueryResults.txt
+  - Evaluation: /Phase2_Evaluation/Evaluation Results/BM25_Stopping_QueryResults.txt
+    - MAP = 0.395
+    - MRR = 0.654
+    - Mean P@5 = 0.373
+    - Mean P@20 = 0.220
+    
+# Final Evaluation
+- TfIdf_with_PseudoRel_QueryResults
+  - MAP = 0.168
+  - MRR = 0.272
+  - Mean P@5 = 0.123
+  - Mean P@20 = 0.106
   
-All outputs:
-1stRun(TfIdf baseline): ~\1stRun_TfIdf_Baseline\TfIdf_QueryResults.txt
-2ndRun(CosineSim baseline: ~\2ndRun_CosinSim_Baseline\CosineSim_QueryResults.txt
-3rdRun(Lucene baseline): ~\3rdRun_Lucene_Baseline\result\Lucene_QueryResults.txt
-4thRun(BM25 baseline): ~\4thRun_BM25_Baseline\BM25_QueryResults.txt
-5thRun(TfIdf+pseudo-relevance): ~\5thRun_TfIdf_PsuedoRelevance\TfIdf_with_PseudoRel_QueryResults.txt
-6thRun(TfIdf+Stopping): ~\6thRun_TfIdf_Stopping\TfIdf_with_Stopping_QueryResults.txt
-7thRun(BM25+Stopping): ~\7thRun_BM25_Stopping\BM25_Stopping_QueryResults.txt
-8thRun(TfIdf+Stemming): ~\Task3_RunWithStemming\TfIdf_Stem_QueryResults.txt
+- TfIdf_QueryResults
+  - MAP = 0.289
+  - MRR = 0.537
+  - Mean P@5 = 0.227
+  - Mean P@20 = 0.139
+  
+- CosineSim_QueryResults
+  - MAP = 0.387
+  - MRR = 0.643
+  - Mean P@5 = 0.323
+  - Mean P@20 = 0.203
+  
+- BM25_QueryResults
+  - MAP = 0.313
+  - MRR = 0.561
+  - Mean P@5 = 0.304
+  - Mean P@20 = 0.161
+  
+- TfIdf_with_Stopping_QueryResults
+  - MAP = 0.331
+  - MRR = 0.572
+  - Mean P@5 = 0.265
+  - Mean P@20 = 0.174
 
-Evaluation Results:
-- All evaluation results can be found at ~\Project\Phase2_Evaluation\Evaluation Results\ folder.
-- summary file contains the summarized results for each of 7 system i.e. (MRR, MAP, P@5, P@20).
-- Each query result file is Precision & Recall table for each run.
+- BM25_Stopping_QueryResults
+  - MAP = 0.395
+  - MRR = 0.654
+  - Mean P@5 = 0.373
+  - Mean P@20 = 0.220
 
-Snippet Generation:
-- Snippet for BM25 with stopping for all 64 queries can be found at ~\Snippet_BM25Stopping_7thRun\snippets.txt
+- Lucene_QueryResults
+  - MAP = 0.412
+  - MRR = 0.680
+  - Mean P@5 = 0.365
+  - Mean P@20 = 0.200
+  
+## Snippet Generation
+As per Luhn’s algorithm, The significant sentence is calculated based on the occurrence of significant words which are words of medium frequency the document, where “medium” means that the frequency is between predefined high-frequency(8 in our case) and low-frequency(3 in our case) cutoff values. Given the significant words, portions of the sentence that are “bracketed” by these words are considered, with a limit set for the number of non-significant words that can be between two significant words (typically four).
 
-Source Codes(Python files):
-- Task1_HtmlTextExtracter.py - To convert the raw html to plain text
-- Task1_HtmlTextExtracter.py - To index the CACM dataset
-- Task1_TfIdf.py - TfIdf baseline model
-- Task1_CosineSimVectorSpace.py - Vector Space Cosine Sim baseline model
-- Task1_BM25.py - BM25 baseline model
-- Task2_TfIdf_Pseudo_Relevance.py - TfIf with pseudo relevance
-- Task3_TextExtracter_StemText.py - To extract documents from stemmed text 
-collection
-- Task3_InvertedIndexer_StemText.py - To index the CACM stemmed dataset
-- Task3_TfIdf_StemText.py - TfIdf with stemming
-- Task3_TfIdf_Stopping.py - TfIdf with Stopping
-- SnippetGeneration_ExtraCredits.py - To generate snippet of top 10 documents for 64 queries
-- ~\Project\Phase2_Evaluation.py - Evaluates all the search engine by calculating effectiveness parameters
+After extracting the snippets for each query we highlighted the query terms in each snippet between <HL>..</HL> tags. The output file for BM25+stopping can be found at “Snippet_BM25Stopping_7thRun/snippets.txt”.
 
-Source Codes(Java files):
-- ~\Project\3rdRun_Lucene_Baseline\src\com\lucene\HW4.java - Lucene baseline model
+For some documents, no snippet could be generated as no contiguous significant words were found.
 
-Setup and compile python files:
-
-***********************The files are build on Python version 2.7x****************************
-
-In windows:
-Open the python editor IDLE from the menu, and open xxxx.py(eg: Task-1.py for Task-1), then press F5 to run it.
-
-In Linux:
-1. On terminal, type chmod u+rx xxxx.py(eg: Task-1.py for Task-1) to make file executable and press Enter
-2. Type python xxxx.py(eg: Task-1.py for Task-1) and press Enter
-3. Provide the corpus file in directory "Corpus\\..."
-
-Setup and compile java files:
-Step 1: Open command prompt
-Step 2: Include lucene-core-4.7.2.jar, lucene-analyzers-common-4.7.2.jar, lucene-queryparser-4.7.2.jar
-Step 3: Compile HW4.java by writing " javac HW4.java" on command prompt.
-Step 4: Execute the HW4.java file by following command
-javac -cp ".;lucene-core-4.7.2.jar;lucene-analyzers-common-4.7.2.jar;lucene-queryparser-4.7.2.jar" HW4.java
-java -cp ".;lucene-core-4.7.2.jar;lucene-analyzers-common-4.7.2.jar;lucene-queryparser-4.7.2.jar" HW4
-
-Input, Output and Path Information for python files:
-
-- All the file paths are included at the top in source files under import statements
-- MyIndex folder contains all the indexes used to score documents.
-- PlainText folder contains the plain text generated from raw html files.
-- StemText folder contains the stemmed text generated from stemmed raw html files.
-
-- corpus folder contains the raw htnml files of cacm dataset.
-- StemCorpus folder contains the raw html files of cacm stemmed dataset.
-- Input queries are stored in list "InputQueries" in source code which are read from cacm.query and cacm.query_stem.txt files respectively.
-  It can be modified or added with any number of queries. The ranker will run sequentially for each query in list.
-- The output files will be generated in the same directory as source file.
-
-- For evaluation, put the 64 query result file in ~\Project\Phase2_Evaluation\Runs which need Evaluation\ folder.
-- Remove the first header line from each file.
-- The result will be generated in ~\Project\Phase2_Evaluation\Evaluation Results\ folder.
-
-Input, Output and Path Information for java files:
-- The input file folder is ~\Project\3rdRun_Lucene_Baseline\document\
-- The indexes will be created at ~\Project\3rdRun_Lucene_Baseline\index\ folder.
-- The result will be produced at ~\Project\3rdRun_Lucene_Baseline\result\ folder.
+- Code: SnippetGeneration_ExtraCredits.py
+- Results with snippets: /Snippet_BM25Stopping_7thRun/snippets.txt
