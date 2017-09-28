@@ -8,6 +8,9 @@ This project was intended to design and develop a sophisticated search engine fo
 - [Evaluate the enhanced models over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall and tabulate the results](#final-evaluation)
 - [Choose the best model(BM25 with stopping) and display the query results with summary highlighting the query words from each relavant document](#snippet-generation)
 
+#indexer
+eh eh
+
 All outputs:
 1stRun(TfIdf baseline): ~\1stRun_TfIdf_Baseline\TfIdf_QueryResults.txt
 2ndRun(CosineSim baseline: ~\2ndRun_CosinSim_Baseline\CosineSim_QueryResults.txt
