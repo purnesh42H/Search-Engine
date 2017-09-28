@@ -38,7 +38,7 @@ Using terminal
   - Type python xxxx.py(eg: Task-1.py for Task-1) and press Enter
   - Provide the corpus file in directory "Corpus\\..."
 
-Setup and compile java files:
+# Setup and compile java files:
   - Open command prompt
   - Include lucene-core-4.7.2.jar, lucene-analyzers-common-4.7.2.jar, lucene-queryparser-4.7.2.jar
   - Compile HW4.java by writing " javac HW4.java" on command prompt.
