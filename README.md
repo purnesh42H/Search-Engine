@@ -55,31 +55,31 @@ Stoplists
   
 Tf-Idf
 Result: /Phase2_Evaluation/Evaluation Results/evaluation_TfIdf_QueryResults.txt
-MAP = 0.289
-MRR = 0.537
-Mean P@5 = 0.227
-Mean P@20 = 0.139
+- MAP = 0.289
+- MRR = 0.537
+- Mean P@5 = 0.227
+- Mean P@20 = 0.139
 
 Cosine Vector Space
 Result: /Phase2_Evaluation/Evaluation Results/evaluation_CosineSim_QueryResults.txt
-MAP = 0.387
-MRR = 0.643
-Mean P@5 = 0.323
-Mean P@20 = 0.203
+- MAP = 0.387
+- MRR = 0.643
+- Mean P@5 = 0.323
+- Mean P@20 = 0.203
 
 Lucene
 Result: /Phase2_Evaluation/Evaluation Results/evaluation_Lucene_QueryResults.txt
-MAP = 0.412
-MRR = 0.680
-Mean P@5 = 0.365
-Mean P@20 = 0.200
+- MAP = 0.412
+- MRR = 0.680
+- Mean P@5 = 0.365
+- Mean P@20 = 0.200
 
 BM25
 Result: /Phase2_Evaluation/Evaluation Results/evaluation_BM25_QueryResults.txt
-MAP = 0.313
-MRR = 0.561
-Mean P@5 = 0.304
-Mean P@20 = 0.161
+- MAP = 0.313
+- MRR = 0.561
+- Mean P@5 = 0.304
+- Mean P@20 = 0.161
 
 ## Tf Idf Enhancements
 - Tf-Idf with psuedo relavance
