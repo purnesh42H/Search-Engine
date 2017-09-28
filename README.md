@@ -54,28 +54,28 @@ Stoplists
   - Relavance file: Phase2_Evaluation/cacm.rel.txt
   
 Tf-Idf
-Result: /Phase2_Evaluation/Evaluation Results/evaluation_TfIdf_QueryResults.txt
+- Result: /Phase2_Evaluation/Evaluation Results/evaluation_TfIdf_QueryResults.txt
 - MAP = 0.289
 - MRR = 0.537
 - Mean P@5 = 0.227
 - Mean P@20 = 0.139
 
 Cosine Vector Space
-Result: /Phase2_Evaluation/Evaluation Results/evaluation_CosineSim_QueryResults.txt
+- Result: /Phase2_Evaluation/Evaluation Results/evaluation_CosineSim_QueryResults.txt
 - MAP = 0.387
 - MRR = 0.643
 - Mean P@5 = 0.323
 - Mean P@20 = 0.203
 
 Lucene
-Result: /Phase2_Evaluation/Evaluation Results/evaluation_Lucene_QueryResults.txt
+- Result: /Phase2_Evaluation/Evaluation Results/evaluation_Lucene_QueryResults.txt
 - MAP = 0.412
 - MRR = 0.680
 - Mean P@5 = 0.365
 - Mean P@20 = 0.200
 
 BM25
-Result: /Phase2_Evaluation/Evaluation Results/evaluation_BM25_QueryResults.txt
+- Result: /Phase2_Evaluation/Evaluation Results/evaluation_BM25_QueryResults.txt
 - MAP = 0.313
 - MRR = 0.561
 - Mean P@5 = 0.304
@@ -86,19 +86,19 @@ Result: /Phase2_Evaluation/Evaluation Results/evaluation_BM25_QueryResults.txt
   - Code: Task2_TfIdf_Pseudo_Relevance
   - Result: /5thRun_TfIdf_PsuedoRelevance/TfIdf_with_PseudoRel_QueryResults.txt
   - Evaluation: /Phase2_Evaluation/Evaluation Results/evaluation_TfIdf_with_PseudoRel_QueryResults.txt
-    MAP = 0.168
-    MRR = 0.272
-    Mean P@5 = 0.123
-    Mean P@20 = 0.106
+    - MAP = 0.168
+    - MRR = 0.272
+    - Mean P@5 = 0.123
+    - Mean P@20 = 0.106
   
 - Tf-Idf with stopping
   - Code: Task3_TfIdf_Stopping.py
   - Result: /6thRun_TfIdf_Stopping/TfIdf_with_Stopping_QueryResults.txt
   - Evaluation: /Phase2_Evaluation/Evaluation Results/evaluation_TfIdf_with_Stopping_QueryResults.txt
-    MAP = 0.331
-    MRR = 0.572
-    Mean P@5 = 0.265
-    Mean P@20 = 0.174
+    - MAP = 0.331
+    - MRR = 0.572
+    - Mean P@5 = 0.265
+    - Mean P@20 = 0.174
   
 - Tf-Idf with stemming
   - Code: Task3_TfIdf_StemText.py
