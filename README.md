@@ -28,7 +28,7 @@ collection
 
 # Setup and compile python files:
 
-***********************The files are build on Python version 2.7x****************************
+**The files are build on Python version 2.7x
 
 In windows:
 Open the python editor IDLE from the menu, and open xxxx.py(eg: Task-1.py for Task-1), then press F5 to run it.
