@@ -1,17 +1,17 @@
 # Overview
 This project was intended to design and develop a sophisticated search engine for the CACM dataset that can produce relavant documents(top 100) for a given query. Project was carried out in following phases:
-- [Index creation and text processing](#indexer)
-- [Implemention of base retrieval models - Tf-Idf, Vector Space, Lucene, BM25](#base-retrieval-models)
+- [Index creation and text processing](#indexer-and-text-processor)
+- [Implemention of base retrieval models - Tf-Idf, Cosine Vector Space, BM25](#base-retrieval-models)
 - [Evaluate each model over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall](#base-evaluation)
 - [Choose any one models(Tf-Idf for this project) and enhance it by incorporating query expansion(psuedo-relavance) and query processing(stopping, stemming) techniques](#enhancements)
 - [Choose the best base model(BM25) and enhance it by query processing techinque "stopping"](#bm25-stopping)
 - [Evaluate the enhanced models over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall and tabulate the results](#final-evaluation)
 - [Choose the best model(BM25 with stopping) and display the query results with summary highlighting the query words from each relavant document](#snippet-generation)
 
-## Indexer
+## Indexer And Text Processor
 Text Processor code files
-- For raw CACM corpus - Task1_HtmlTextExtracter.py
-- For stemmed CACM corpus - Task3_TextExtracter_StemText.py
+- For raw CACM corpus(/corpus) - Task1_HtmlTextExtracter.py
+- For stemmed CACM corpus(/StemCorpus) - Task3_TextExtracter_StemText.py
 
 Text Process output files
 - /PlainText: Processed files of raw CACM corpus
@@ -23,7 +23,7 @@ Indexer code files
 
 Indexer output files
 - /MyIndex
-  - OneGram_DfTable - Unigram document frequency index for raw CACM dataset(term, docId, df)
+  - OneGram_DfTable.txt - Unigram document frequency index for raw CACM dataset(term, docId, df)
   - OneGram_DfTable_Stem.txt - Unigram document frequency index for stemmed CACM dataset(term, docId, df)
   - OneGram_TfTable.txt - Unigram term frequency index for raw CACM dataset(term, tf)
   - OneGram_TfTable_Stem.txt - Unigram term frequency index for stemmed CACM dataset(term, tf)
