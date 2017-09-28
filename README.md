@@ -10,7 +10,7 @@ This project was intended to design and develop a sophisticated search engine fo
 
 # Source Codes(Python files):
 - Task1_HtmlTextExtracter.py - To convert the raw html to plain text
-- Task1_HtmlTextExtracter.py - To index the CACM dataset
+- Task1_InvertedIndexer.py - To index the CACM dataset
 - Task1_TfIdf.py - TfIdf baseline model
 - Task1_CosineSimVectorSpace.py - Vector Space Cosine Sim baseline model
 - Task1_BM25.py - BM25 baseline model
