@@ -1,7 +1,8 @@
-# Search-Engine
-A search engine in Python with n-gram indexer, html parser, and retrieval models like BM25 and Vector Space.
-
-Documentation: PDixit_RShah_MBhaskaran.pdf
+# Overview
+- This project was intended to design and develop a sophisticated search engine for the CACM dataset that can produce relavant documents(top 100) for a given query. Project was carried out in following phases:
+(#indexer)
+by implementing several retrieval models namely Tf-Idf, Vector Space, Lucene, BM25 and evaluate them over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall. 
+- Next, one of the retreival model(Tf-Idf for this project) was chosen and enhanced by incorporating query expansion techniques such as "pseudo-relavance feedback" 
 
 All outputs:
 1stRun(TfIdf baseline): ~\1stRun_TfIdf_Baseline\TfIdf_QueryResults.txt
