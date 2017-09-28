@@ -8,6 +8,31 @@ This project was intended to design and develop a sophisticated search engine fo
 - [Evaluate the enhanced models over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall and tabulate the results](#final-evaluation)
 - [Choose the best model(BM25 with stopping) and display the query results with summary highlighting the query words from each relavant document](#snippet-generation)
 
+## Indexer
+Text Processor code files
+- For raw CACM corpus - Task1_HtmlTextExtracter.py
+- For stemmed CACM corpus - Task3_TextExtracter_StemText.py
+
+Text Process output files
+- /PlainText: Processed files of raw CACM corpus
+- /StemmedText: Processed files stemmed CACM corpus
+
+Indexer code files
+- For raw CACM corpus - Task1_InvertedIndexer.py
+- For stemmed CACM corpus - Task3_InvertedIndexer_StemText
+
+Indexer output files
+- /MyIndex
+  - OneGram_DfTable - Unigram document frequency index for raw CACM dataset(term, docId, df)
+  - OneGram_DfTable_Stem.txt - Unigram document frequency index for stemmed CACM dataset(term, docId, df)
+  - OneGram_TfTable.txt - Unigram term frequency index for raw CACM dataset(term, tf)
+  - OneGram_TfTable_Stem.txt - Unigram term frequency index for stemmed CACM dataset(term, tf)
+  
+- Stoplists
+  - /MyIndex/Task3_Stoplist_OneGram.txt - Stopwords for raw CACM dataset
+  - /MyIndex/Task3_Stoplist_OneGram_Stem.txt - Stopwords for stemmed CACM dataset
+
+
 All outputs:
 1stRun(TfIdf baseline): ~\1stRun_TfIdf_Baseline\TfIdf_QueryResults.txt
 2ndRun(CosineSim baseline: ~\2ndRun_CosinSim_Baseline\CosineSim_QueryResults.txt
@@ -85,6 +110,3 @@ Input, Output and Path Information for java files:
 - The input file folder is ~\Project\3rdRun_Lucene_Baseline\document\
 - The indexes will be created at ~\Project\3rdRun_Lucene_Baseline\index\ folder.
 - The result will be produced at ~\Project\3rdRun_Lucene_Baseline\result\ folder.
-
-## Base Evaluation
-This is a indexer content
