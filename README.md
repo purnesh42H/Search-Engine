@@ -8,9 +8,6 @@ This project was intended to design and develop a sophisticated search engine fo
 - [Evaluate the enhanced models over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall and tabulate the results](#final-evaluation)
 - [Choose the best model(BM25 with stopping) and display the query results with summary highlighting the query words from each relavant document](#snippet-generation)
 
-#Indexer
-This is a indexer content
-
 All outputs:
 1stRun(TfIdf baseline): ~\1stRun_TfIdf_Baseline\TfIdf_QueryResults.txt
 2ndRun(CosineSim baseline: ~\2ndRun_CosinSim_Baseline\CosineSim_QueryResults.txt
@@ -88,3 +85,6 @@ Input, Output and Path Information for java files:
 - The input file folder is ~\Project\3rdRun_Lucene_Baseline\document\
 - The indexes will be created at ~\Project\3rdRun_Lucene_Baseline\index\ folder.
 - The result will be produced at ~\Project\3rdRun_Lucene_Baseline\result\ folder.
+
+#Indexer
+This is a indexer content
