@@ -2,9 +2,11 @@
 This project was intended to design and develop a sophisticated search engine for the CACM dataset that can produce relavant documents(top 100) for a given query. Project was carried out in following phases:
 - [Index creation and text processing](#indexer)
 - [Implemention of base retrieval models - Tf-Idf, Vector Space, Lucene, BM25](#base-retrieval-models)
-- [Select one of the model(Tf-Idf for this project) and enhance by incorporating query expansion(psuedo-relavance) and query processing(stopping, stemming) techniques](#enhancements)
-by implementing several retrieval models namely Tf-Idf, Vector Space, Lucene, BM25 and evaluate them over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall. 
-- Next, one of the retreival model(Tf-Idf for this project) was chosen and enhanced by incorporating query expansion techniques such as "pseudo-relavance feedback" 
+- [Evaluate each model over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall](#base-evaluation)
+- [Choose any one models(Tf-Idf for this project) and enhance it by incorporating query expansion(psuedo-relavance) and query processing(stopping, stemming) techniques](#enhancements)
+- [Choose the best base model(BM25) and enhance it by query processing techinque "stopping"](#bm25-stopping)
+- [Evaluate the enhanced models over the CACM dataset based on standard parameters MAP, MRR, P@K and Precision & Recall and tabulate the results](#final-evaluation)
+- [Choose the best model(BM25 with stopping) and display the query results with summary highlighting the query words from each relavant document](#snippet-generation)
 
 All outputs:
 1stRun(TfIdf baseline): ~\1stRun_TfIdf_Baseline\TfIdf_QueryResults.txt
